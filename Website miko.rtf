@@ -1,0 +1,1413 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw3231\paperh2834\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="id" class="scroll-smooth">\
+<head>\
+  <meta charset="UTF-8">\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+  <title>Michorinam Harilaha Limsib | Professional Portfolio</title>\
+  <meta name="description" content="Portfolio Profesional Michorinam Harilaha Limsib - Mahasiswa Psikologi Universitas Ciputra, Content Creator, & English Teacher.">\
+  \
+  <!-- Tailwind CSS -->\
+  <script src="https://cdn.tailwindcss.com"></script>\
+  <script>\
+    tailwind.config = \{\
+      darkMode: 'class',\
+      theme: \{\
+        extend: \{\
+          colors: \{\
+            navy: \{\
+              900: '#0A1128',\
+              800: '#101F42',\
+              700: '#1C3166',\
+            \},\
+            gold: \{\
+              400: '#F3C63F',\
+              500: '#D4AF37',\
+              600: '#B8901C',\
+            \}\
+          \},\
+          fontFamily: \{\
+            serif: ['"Playfair Display"', 'serif'],\
+            sans: ['Poppins', 'Inter', 'sans-serif'],\
+          \}\
+        \}\
+      \}\
+    \}\
+  </script>\
+\
+  <!-- Google Fonts & Font Awesome Icons -->\
+  <link rel="preconnect" href="https://fonts.googleapis.com">\
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">\
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">\
+\
+  <style>\
+    /* Custom Scrollbar */\
+    ::-webkit-scrollbar \{\
+      width: 10px;\
+    \}\
+    ::-webkit-scrollbar-track \{\
+      background: #0A1128;\
+    \}\
+    .dark ::-webkit-scrollbar-track \{\
+      background: #0A1128;\
+    \}\
+    html.light ::-webkit-scrollbar-track \{\
+      background: #F4F6FC;\
+    \}\
+    ::-webkit-scrollbar-thumb \{\
+      background: #D4AF37;\
+      border-radius: 5px;\
+    \}\
+    ::-webkit-scrollbar-thumb:hover \{\
+      background: #B8901C;\
+    \}\
+\
+    /* Floating Animations */\
+    @keyframes float \{\
+      0%, 100% \{ transform: translateY(0px); \}\
+      50% \{ transform: translateY(-12px); \}\
+    \}\
+    .animate-float \{\
+      animation: float 6s ease-in-out infinite;\
+    \}\
+\
+    /* Dynamic Border Glow */\
+    .glow-border \{\
+      position: relative;\
+    \}\
+    .glow-border::after \{\
+      content: '';\
+      position: absolute;\
+      inset: -3px;\
+      background: linear-gradient(45deg, #D4AF37, #38BDF8, #D4AF37);\
+      border-radius: inherit;\
+      z-index: -1;\
+      filter: blur(8px);\
+      opacity: 0.85;\
+      animation: rotateGlow 6s linear infinite;\
+    \}\
+\
+    @keyframes rotateGlow \{\
+      0% \{ filter: hue-rotate(0deg); \}\
+      100% \{ filter: hue-rotate(360deg); \}\
+    \}\
+\
+    /* Scroll progress indicator */\
+    #scroll-indicator \{\
+      height: 4px;\
+      background: linear-gradient(to right, #D4AF37, #38BDF8);\
+      width: 0%;\
+      position: fixed;\
+      top: 0;\
+      left: 0;\
+      z-index: 100;\
+      transition: width 0.1s ease-out;\
+    \}\
+  </style>\
+</head>\
+<body class="bg-[#0A1128] text-[#F4F6FC] font-sans antialiased transition-colors duration-300 dark:bg-[#0A1128] dark:text-[#F4F6FC] light:bg-[#F4F6FC] light:text-[#0A1128]" id="body-theme">\
+\
+  <!-- Scroll Progress Bar -->\
+  <div id="scroll-indicator"></div>\
+\
+  <!-- Loading Animation -->\
+  <div id="loader" class="fixed inset-0 z-50 flex flex-col items-center justify-content-center bg-navy-900 transition-opacity duration-700 ease-out">\
+    <div class="relative flex items-center justify-center h-screen w-full">\
+      <div class="text-center">\
+        <h1 class="font-serif text-4xl md:text-5xl text-gold-400 tracking-wider mb-3 animate-pulse">MHL</h1>\
+        <div class="w-48 h-[2px] bg-slate-700 mx-auto relative overflow-hidden">\
+          <div class="absolute h-full bg-gold-500 top-0 left-0 w-1/2 animate-[loadingBar_2s_infinite_ease-in-out]"></div>\
+        </div>\
+        <p class="text-xs text-sky-400 mt-2 tracking-widest font-mono uppercase">Memuat Portfolio Premium...</p>\
+      </div>\
+    </div>\
+  </div>\
+\
+  <style>\
+    @keyframes loadingBar \{\
+      0% \{ left: -50%; width: 30%; \}\
+      50% \{ left: 30%; width: 60%; \}\
+      100% \{ left: 100%; width: 30%; \}\
+    \}\
+  </style>\
+\
+  <!-- Sticky Header / Navbar -->\
+  <header class="fixed top-0 left-0 w-full z-40 transition-all duration-300 bg-navy-900/80 backdrop-blur-md border-b border-white/5" id="navbar">\
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">\
+      <!-- Logo / Monogram -->\
+      <a href="#hero" class="group flex items-center gap-3">\
+        <span class="font-serif text-2xl font-bold bg-gradient-to-r from-gold-400 to-sky-400 bg-clip-text text-transparent group-hover:scale-105 transition-transform">MHL</span>\
+        <div class="hidden md:block h-5 w-[1px] bg-slate-700"></div>\
+        <span class="hidden md:block text-xs uppercase tracking-widest text-slate-400 font-semibold group-hover:text-gold-400 transition-colors">Psychology & Creative</span>\
+      </a>\
+\
+      <!-- Desktop Navigation -->\
+      <nav class="hidden lg:flex items-center gap-8">\
+        <a href="#about" class="text-sm font-medium hover:text-gold-400 transition-colors">Tentang Saya</a>\
+        <a href="#education" class="text-sm font-medium hover:text-gold-400 transition-colors">Edukasi</a>\
+        <a href="#experience" class="text-sm font-medium hover:text-gold-400 transition-colors">Pengalaman</a>\
+        <a href="#achievements" class="text-sm font-medium hover:text-gold-400 transition-colors">Prestasi</a>\
+        <a href="#skills" class="text-sm font-medium hover:text-gold-400 transition-colors">Keahlian</a>\
+        <a href="#portfolio" class="text-sm font-medium hover:text-gold-400 transition-colors">Portfolio</a>\
+        <a href="#contact" class="text-sm font-medium hover:text-gold-400 transition-colors">Kontak</a>\
+      </nav>\
+\
+      <!-- Right Elements: Theme Switch & CTA Button -->\
+      <div class="flex items-center gap-4">\
+        <!-- Theme Toggle Button -->\
+        <button id="theme-toggle" class="p-2.5 rounded-full hover:bg-white/5 border border-white/10 text-gold-400 hover:text-sky-400 transition-all focus:outline-none" title="Ubah Tema">\
+          <i class="fa-solid fa-moon text-lg" id="theme-icon"></i>\
+        </button>\
+\
+        <a href="#contact" class="hidden sm:inline-flex px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-gold-500 to-gold-600 text-navy-900 hover:from-sky-400 hover:to-sky-500 shadow-lg shadow-gold-500/10 hover:shadow-sky-400/20 transition-all duration-300 hover:-translate-y-0.5">\
+          Kolaborasi\
+        </a>\
+\
+        <!-- Mobile Menu Toggle -->\
+        <button id="menu-toggle" class="lg:hidden p-2 rounded-lg text-slate-300 hover:text-gold-400 focus:outline-none">\
+          <i class="fa-solid fa-bars-staggered text-2xl"></i>\
+        </button>\
+      </div>\
+    </div>\
+\
+    <!-- Mobile Navigation Drawer -->\
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-white/5 bg-navy-900 px-6 py-6 absolute top-full left-0 w-full shadow-2xl space-y-4">\
+      <a href="#about" class="block text-base font-medium py-2 border-b border-white/5 hover:text-gold-400">Tentang Saya</a>\
+      <a href="#education" class="block text-base font-medium py-2 border-b border-white/5 hover:text-gold-400">Edukasi</a>\
+      <a href="#experience" class="block text-base font-medium py-2 border-b border-white/5 hover:text-gold-400">Pengalaman</a>\
+      <a href="#achievements" class="block text-base font-medium py-2 border-b border-white/5 hover:text-gold-400">Prestasi</a>\
+      <a href="#skills" class="block text-base font-medium py-2 border-b border-white/5 hover:text-gold-400">Keahlian</a>\
+      <a href="#portfolio" class="block text-base font-medium py-2 border-b border-white/5 hover:text-gold-400">Portfolio</a>\
+      <a href="#contact" class="block text-base font-medium py-2 hover:text-gold-400">Kontak</a>\
+    </div>\
+  </header>\
+\
+  <!-- Hero Section -->\
+  <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-gradient-to-b from-[#0A1128] via-[#0D1D4A] to-[#0A1128]">\
+    <!-- Background Sparkles / Decorative Circles -->\
+    <div class="absolute top-1/4 left-10 w-96 h-96 bg-gold-500/5 rounded-full filter blur-[120px] pointer-events-none"></div>\
+    <div class="absolute bottom-1/4 right-10 w-96 h-96 bg-sky-500/5 rounded-full filter blur-[120px] pointer-events-none"></div>\
+\
+    <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 w-full">\
+      \
+      <!-- Text Side (Left) -->\
+      <div class="lg:col-span-7 space-y-6 text-center lg:text-left">\
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-400 text-xs font-semibold uppercase tracking-wider">\
+          <i class="fa-solid fa-star text-[10px] animate-spin"></i> Mahasiswa Berprestasi\
+        </div>\
+        \
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">\
+          <span class="block text-slate-400 font-sans text-lg sm:text-xl font-medium tracking-widest mb-2">HALO, SAYA</span>\
+          <span class="font-serif bg-gradient-to-r from-white via-gold-400 to-sky-400 bg-clip-text text-transparent">Michorinam Harilaha Limsib</span>\
+        </h1>\
+\
+        <!-- Typing/Dynamic Title Headline -->\
+        <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-sky-400/90 h-8 flex items-center justify-center lg:justify-start">\
+          <span id="dynamic-headline" class="border-r-2 border-sky-400 pr-1 py-1"></span>\
+        </h2>\
+\
+        <p class="text-slate-300 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">\
+          Mahasiswa Psikologi <span class="text-white font-medium">Universitas Ciputra (IPK 3,74)</span> yang mengombinasikan pemahaman perilaku manusia dengan dunia kreativitas multimedia. Ahli dalam mengemas topik psikologi menjadi konten edukasi yang ringan, relevan, dan bermakna.\
+        </p>\
+\
+        <!-- Stats Brief Badge -->\
+        <div class="grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0 pt-2 border-t border-white/10">\
+          <div>\
+            <span class="block font-serif text-2xl font-bold text-gold-400">3.74</span>\
+            <span class="text-xs text-slate-400 uppercase tracking-wider">IPK Akademik</span>\
+          </div>\
+          <div class="border-l border-white/10">\
+            <span class="block font-serif text-2xl font-bold text-sky-400">4+</span>\
+            <span class="text-xs text-slate-400 uppercase tracking-wider">Prestasi Reels</span>\
+          </div>\
+          <div class="border-l border-white/10">\
+            <span class="block font-serif text-2xl font-bold text-slate-200">10+</span>\
+            <span class="text-xs text-slate-400 uppercase tracking-wider">Konten/Bulan</span>\
+          </div>\
+        </div>\
+\
+        <!-- Call To Actions -->\
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">\
+          <button onclick="downloadCV()" class="px-8 py-3.5 rounded-full font-bold text-sm uppercase tracking-wider bg-gradient-to-r from-gold-500 to-amber-500 text-navy-900 hover:from-sky-400 hover:to-sky-500 shadow-xl shadow-gold-500/10 hover:shadow-sky-400/20 transition-all duration-300 hover:-translate-y-1">\
+            <i class="fa-solid fa-download mr-2"></i> Download CV\
+          </button>\
+          <a href="#contact" class="px-8 py-3.5 rounded-full font-bold text-sm uppercase tracking-wider border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/40 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center">\
+            <i class="fa-solid fa-paper-plane mr-2 text-sky-400"></i> Hubungi Saya\
+          </a>\
+        </div>\
+      </div>\
+\
+      <!-- Profile Avatar Side (Right) -->\
+      <div class="lg:col-span-5 flex justify-center items-center">\
+        <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 animate-float">\
+          <!-- Main Glowing Container -->\
+          <div class="w-full h-full rounded-full overflow-hidden border-4 border-navy-900 glow-border bg-gradient-to-tr from-navy-800 to-navy-700 flex items-center justify-center relative">\
+            \
+            <!-- \uc0\u55357 \u56568  FOTO PROFIL UTAMA ANDA -->\
+            <!-- Ubah 'foto-profil.jpg' dengan nama file foto asli Anda di folder yang sama, contoh: src="foto-michorinam.png" -->\
+            <img src="foto-profil.jpg" alt="Michorinam Harilaha Limsib" \
+                 class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-300"\
+                 id="hero-profile-img"\
+                 onerror="handleImageError(this, 'hero-fallback')">\
+\
+            <!-- Custom SVG Portrait Avatar (Tampil otomatis sebagai CADANGAN jika foto-profil.jpg belum ada atau error) -->\
+            <div id="hero-fallback" class="absolute inset-0 w-full h-full flex items-center justify-center bg-gradient-to-tr from-navy-800 to-navy-700">\
+              <svg class="w-11/12 h-11/12 text-slate-400" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">\
+                <defs>\
+                  <linearGradient id="grad-bg" x1="0%" y1="0%" x2="100%" y2="100%">\
+                    <stop offset="0%" stop-color="#1E293B" />\
+                    <stop offset="100%" stop-color="#0F172A" />\
+                  </linearGradient>\
+                  <linearGradient id="grad-hair" x1="0%" y1="0%" x2="100%" y2="100%">\
+                    <stop offset="0%" stop-color="#334155" />\
+                    <stop offset="100%" stop-color="#1E293B" />\
+                  </linearGradient>\
+                  <linearGradient id="grad-suit" x1="0%" y1="0%" x2="100%" y2="100%">\
+                    <stop offset="0%" stop-color="#1D4ED8" />\
+                    <stop offset="100%" stop-color="#0F172A" />\
+                  </linearGradient>\
+                </defs>\
+                <circle cx="100" cy="100" r="95" fill="url(#grad-bg)" stroke="#D4AF37" stroke-width="2"/>\
+                <!-- Shoulders and Suit -->\
+                <path d="M40 180 C40 145, 60 130, 100 130 C140 130, 160 145, 160 180 Z" fill="url(#grad-suit)" />\
+                <path d="M85 130 L100 155 L115 130 Z" fill="#F1F5F9" />\
+                <path d="M93 155 L100 180 L107 155 Z" fill="#D4AF37" />\
+                <!-- Face -->\
+                <circle cx="100" cy="90" r="35" fill="#FED7AA" />\
+                <!-- Hair -->\
+                <path d="M62 85 C62 48, 138 48, 138 85 C138 65, 120 55, 100 55 C80 55, 62 65, 62 85 Z" fill="url(#grad-hair)" />\
+                <path d="M125 75 Q100 65 75 75 C65 80 65 95 65 95 C65 95 72 85 85 85 C100 85 105 92 120 85 C130 80 125 75 125 75 Z" fill="#0F172A" />\
+                <!-- Glasses -->\
+                <circle cx="88" cy="90" r="10" stroke="#F59E0B" stroke-width="2" fill="none"/>\
+                <circle cx="112" cy="90" r="10" stroke="#F59E0B" stroke-width="2" fill="none"/>\
+                <line x1="98" y1="90" x2="102" y2="90" stroke="#F59E0B" stroke-width="2"/>\
+                <!-- Smile -->\
+                <path d="M92 108 Q100 115 108 108" stroke="#1E293B" stroke-width="2.5" fill="none" stroke-linecap="round" />\
+              </svg>\
+            </div>\
+\
+          </div>\
+\
+          <!-- Micro Floating Badges -->\
+          <div class="absolute -top-3 -right-3 w-14 h-14 rounded-full bg-navy-800 border-2 border-gold-500 flex items-center justify-center shadow-lg z-20 animate-bounce">\
+            <i class="fa-solid fa-brain text-gold-400 text-xl" title="Psikologi"></i>\
+          </div>\
+          <div class="absolute -bottom-3 -left-3 w-14 h-14 rounded-full bg-navy-800 border-2 border-sky-400 flex items-center justify-center shadow-lg z-20" style="animation: float 4s ease-in-out infinite;">\
+            <i class="fa-solid fa-video text-sky-400 text-xl" title="Content Creator"></i>\
+          </div>\
+          <div class="absolute top-1/2 -left-8 w-12 h-12 rounded-full bg-navy-800 border border-slate-700 flex items-center justify-center shadow-md z-20">\
+            <span class="text-xs font-bold text-emerald-400 font-mono">BEC</span>\
+          </div>\
+        </div>\
+      </div>\
+\
+    </div>\
+  </section>\
+\
+  <!-- About Me Section -->\
+  <section id="about" class="py-24 bg-navy-900 border-t border-white/5 relative">\
+    <div class="max-w-7xl mx-auto px-6">\
+      \
+      <!-- Section Header -->\
+      <div class="text-center max-w-3xl mx-auto mb-16">\
+        <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Tentang Saya</span>\
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mt-2 text-white">The Bridge of Science & Creative</h2>\
+        <div class="w-16 h-1 bg-gradient-to-r from-gold-500 to-sky-400 mx-auto mt-4 rounded-full"></div>\
+      </div>\
+\
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">\
+        <!-- Text Detail -->\
+        <div class="lg:col-span-7 space-y-6">\
+          <p class="text-slate-300 leading-relaxed text-lg">\
+            Saya mengidentifikasi diri saya sebagai seorang eksploatif yang tidak hanya mempelajari ilmu, namun juga menyebarkannya. Melalui studi saya di <span class="text-gold-400 font-semibold">Universitas Ciputra</span>, saya mendalami struktur terdalam psikologi manusia, dari dasar asesmen hingga perilaku belajar-mengajar.\
+          </p>\
+          <p class="text-slate-300 leading-relaxed">\
+            Namun, tantangan terbesar ilmu pengetahuan adalah <span class="text-sky-400 italic">komunikasi</span>. Di sinilah hasrat saya terhadap multimedia dan pembuatan konten masuk. Dengan bekal kelulusan SMK jurusan Multimedia serta pelatihan intensif bahasa di Basic English Course, saya berfokus membuat materi psikologi yang biasanya terkesan berat menjadi konten video yang estetis, menghibur, dan mendidik secara global.\
+          </p>\
+          \
+          <!-- Key Highlights / Badges Grid -->\
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">\
+            <div class="p-4 rounded-xl bg-white/5 border border-white/5 hover:border-gold-500/20 hover:bg-white/[0.08] transition-all flex gap-3">\
+              <div class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-400 shrink-0">\
+                <i class="fa-solid fa-graduation-cap"></i>\
+              </div>\
+              <div>\
+                <h4 class="font-semibold text-white">Psychology Student</h4>\
+                <p class="text-xs text-slate-400">Menguasai asessmen dasar & observasi perilaku.</p>\
+              </div>\
+            </div>\
+\
+            <div class="p-4 rounded-xl bg-white/5 border border-white/5 hover:border-sky-400/20 hover:bg-white/[0.08] transition-all flex gap-3">\
+              <div class="w-10 h-10 rounded-lg bg-sky-500/10 flex items-center justify-center text-sky-400 shrink-0">\
+                <i class="fa-solid fa-award"></i>\
+              </div>\
+              <div>\
+                <h4 class="font-semibold text-white">Award-Winning Creator</h4>\
+                <p class="text-xs text-slate-400">Juara video edukasi skala nasional & internasional.</p>\
+              </div>\
+            </div>\
+\
+            <div class="p-4 rounded-xl bg-white/5 border border-white/5 hover:border-sky-400/20 hover:bg-white/[0.08] transition-all flex gap-3">\
+              <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 shrink-0">\
+                <i class="fa-solid fa-chalkboard-user"></i>\
+              </div>\
+              <div>\
+                <h4 class="font-semibold text-white">English Teacher</h4>\
+                <p class="text-xs text-slate-400">Komunikator fasih dengan metodologi komunikatif.</p>\
+              </div>\
+            </div>\
+\
+            <div class="p-4 rounded-xl bg-white/5 border border-white/5 hover:border-gold-500/20 hover:bg-white/[0.08] transition-all flex gap-3">\
+              <div class="w-10 h-10 rounded-lg bg-violet-500/10 flex items-center justify-center text-violet-400 shrink-0">\
+                <i class="fa-solid fa-photo-film"></i>\
+              </div>\
+              <div>\
+                <h4 class="font-semibold text-white">Multimedia Specialist</h4>\
+                <p class="text-xs text-slate-400">Mampu melakukan editing, finishing, & design setting.</p>\
+              </div>\
+            </div>\
+          </div>\
+        </div>\
+\
+        <!-- Vision / Statement Card (Right) -->\
+        <div class="lg:col-span-5">\
+          <div class="p-8 rounded-2xl bg-gradient-to-br from-navy-800 to-navy-700 border border-white/10 relative overflow-hidden shadow-2xl">\
+            <div class="absolute -top-12 -right-12 w-40 h-40 bg-gold-500/10 rounded-full filter blur-2xl"></div>\
+            <i class="fa-solid fa-quote-left text-5xl text-gold-500/15 mb-4 block"></i>\
+            <h3 class="font-serif text-2xl font-semibold text-gold-400 mb-4">Filosofi Pendidikan</h3>\
+            <p class="text-slate-300 italic leading-relaxed mb-6">\
+              "Ilmu pengetahuan terbaik adalah ilmu yang dapat diakses oleh siapa saja. Menyatukan psikologi ilmiah dan konten video kreatif adalah misi saya untuk menghancurkan stigma kompleksitas kesehatan mental dan pembelajaran."\
+            </p>\
+            <div class="flex items-center gap-3">\
+              <div class="w-10 h-[1px] bg-sky-400"></div>\
+              <span class="text-xs font-bold uppercase tracking-widest text-sky-400 font-mono">MICHORINAM H. L.</span>\
+            </div>\
+          </div>\
+        </div>\
+      </div>\
+\
+    </div>\
+  </section>\
+\
+  <!-- Education Timeline Section -->\
+  <section id="education" class="py-24 bg-[#0A1128] relative">\
+    <div class="max-w-7xl mx-auto px-6">\
+      \
+      <!-- Section Header -->\
+      <div class="text-center max-w-3xl mx-auto mb-16">\
+        <span class="text-xs font-bold uppercase tracking-widest text-sky-400">Pendidikan</span>\
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mt-2 text-white">Jejak Akademis</h2>\
+        <div class="w-16 h-1 bg-gradient-to-r from-sky-400 to-gold-400 mx-auto mt-4 rounded-full"></div>\
+      </div>\
+\
+      <!-- Timeline Layout -->\
+      <div class="relative max-w-4xl mx-auto">\
+        <!-- Center vertical line -->\
+        <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-[2px] bg-slate-800 -translate-x-1/2"></div>\
+\
+        <!-- Edu Item 1 -->\
+        <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">\
+          <!-- Timeline point icon -->\
+          <div class="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-gold-500 border-4 border-navy-900 -translate-x-1/2 flex items-center justify-center z-10">\
+            <i class="fa-solid fa-graduation-cap text-[10px] text-navy-900"></i>\
+          </div>\
+          <!-- Left empty for md screens, content goes right -->\
+          <div class="hidden md:block"></div>\
+          <!-- Content Box -->\
+          <div class="pl-12 md:pl-8">\
+            <div class="p-6 rounded-2xl bg-navy-800 border border-white/5 hover:border-gold-500/30 transition-all shadow-xl hover:-translate-y-1 duration-300">\
+              <span class="inline-block px-3 py-1 rounded-full bg-gold-500/10 text-gold-400 text-xs font-bold mb-3">Agust 2024 - Sekarang</span>\
+              <h3 class="font-serif text-xl font-bold text-white">School of Psychology</h3>\
+              <h4 class="text-sky-400 font-medium text-sm">Universitas Ciputra</h4>\
+              <p class="text-xs text-slate-400 mt-1 font-mono">IPK Saat Ini: 3.74 / 4.00</p>\
+              <p class="text-slate-300 text-sm mt-3 leading-relaxed">\
+                Mempelajari psikologi perilaku manusia, dunia edukasi, serta proses memahami individu melalui observasi terstruktur, refleksi, dan pelaksanaan tes psikologi awal.\
+              </p>\
+            </div>\
+          </div>\
+        </div>\
+\
+        <!-- Edu Item 2 -->\
+        <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">\
+          <!-- Timeline point icon -->\
+          <div class="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-sky-400 border-4 border-navy-900 -translate-x-1/2 flex items-center justify-center z-10">\
+            <i class="fa-solid fa-language text-[10px] text-navy-900"></i>\
+          </div>\
+          <!-- Content Box (Left) -->\
+          <div class="pl-12 md:pl-0 md:pr-8 md:text-right">\
+            <div class="p-6 rounded-2xl bg-navy-800 border border-white/5 hover:border-sky-400/30 transition-all shadow-xl hover:-translate-y-1 duration-300">\
+              <span class="inline-block px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 text-xs font-bold mb-3">Sep 2023 - Feb 2024</span>\
+              <h3 class="font-serif text-xl font-bold text-white">Basic English Course (BEC)</h3>\
+              <h4 class="text-gold-400 font-medium text-sm">Program Intensif Bahasa Inggris</h4>\
+              <p class="text-slate-300 text-sm mt-3 leading-relaxed md:text-right">\
+                Pendidikan intensif 6 bulan berfokus pada keahlian menulis (Writing), menyimak (Listening), tata bahasa (Grammar), serta keterampilan berbicara di depan umum (Speaking).\
+              </p>\
+            </div>\
+          </div>\
+          <div class="hidden md:block"></div>\
+        </div>\
+\
+        <!-- Edu Item 3 -->\
+        <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8">\
+          <!-- Timeline point icon -->\
+          <div class="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-slate-600 border-4 border-navy-900 -translate-x-1/2 flex items-center justify-center z-10">\
+            <i class="fa-solid fa-image text-[10px] text-navy-900"></i>\
+          </div>\
+          <div class="hidden md:block"></div>\
+          <!-- Content Box -->\
+          <div class="pl-12 md:pl-8">\
+            <div class="p-6 rounded-2xl bg-navy-800 border border-white/5 hover:border-slate-500/30 transition-all shadow-xl hover:-translate-y-1 duration-300">\
+              <span class="inline-block px-3 py-1 rounded-full bg-slate-500/10 text-slate-400 text-xs font-bold mb-3">Agust 2020 - Mei 2023</span>\
+              <h3 class="font-serif text-xl font-bold text-white">SMK GIKI 1 SURABAYA</h3>\
+              <h4 class="text-sky-400 font-medium text-sm">Kompetensi Keahlian Multimedia</h4>\
+              <p class="text-slate-300 text-sm mt-3 leading-relaxed">\
+                Mempelajari dasar-dasar produksi video, animasi, manipulasi grafis, penataan suara, serta pembentukan fondasi awal yang matang untuk pembuatan konten edukasi modern.\
+              </p>\
+            </div>\
+          </div>\
+        </div>\
+\
+      </div>\
+\
+    </div>\
+  </section>\
+\
+  <!-- Work Experience Section -->\
+  <section id="experience" class="py-24 bg-navy-900 border-t border-white/5">\
+    <div class="max-w-7xl mx-auto px-6">\
+      \
+      <!-- Section Header -->\
+      <div class="text-center max-w-3xl mx-auto mb-16">\
+        <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Karir & Kerja</span>\
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mt-2 text-white">Pengalaman Kerja</h2>\
+        <div class="w-16 h-1 bg-gradient-to-r from-gold-500 to-sky-400 mx-auto mt-4 rounded-full"></div>\
+      </div>\
+\
+      <!-- Experience Cards Grid -->\
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">\
+        \
+        <!-- Job 1 -->\
+        <div class="p-8 rounded-2xl bg-navy-800 border border-white/5 hover:border-gold-500/30 transition-all flex flex-col justify-between group shadow-xl">\
+          <div class="space-y-4">\
+            <div class="flex justify-between items-start">\
+              <div class="p-3.5 rounded-xl bg-gold-500/10 text-gold-400">\
+                <i class="fa-solid fa-clapperboard text-2xl"></i>\
+              </div>\
+              <span class="text-xs font-semibold text-sky-400 font-mono">Nov 2025 - Sekarang</span>\
+            </div>\
+            <div>\
+              <h3 class="font-serif text-2xl font-bold text-white group-hover:text-gold-400 transition-colors">Content Creator</h3>\
+              <p class="text-sm text-slate-400">Universitas Ciputra & UC Psychology</p>\
+            </div>\
+            <ul class="space-y-2 text-sm text-slate-300 pt-2 border-t border-white/5">\
+              <li class="flex items-start gap-2">\
+                <i class="fa-solid fa-check text-gold-400 mt-1 shrink-0"></i>\
+                <span>Menghasilkan ide & visual kreatif untuk @universitasciputra dan @uc_psy.</span>\
+              </li>\
+              <li class="flex items-start gap-2">\
+                <i class="fa-solid fa-check text-gold-400 mt-1 shrink-0"></i>\
+                <span>Merilis minimal 10 konten berupa Reels & Story inspiratif setiap bulan.</span>\
+              </li>\
+              <li class="flex items-start gap-2">\
+                <i class="fa-solid fa-check text-gold-400 mt-1 shrink-0"></i>\
+                <span>Meliput berbagai event akademis, non-akademis, maupun psikologi di area kampus.</span>\
+              </li>\
+            </ul>\
+          </div>\
+        </div>\
+\
+        <!-- Job 2 -->\
+        <div class="p-8 rounded-2xl bg-navy-800 border border-white/5 hover:border-sky-400/30 transition-all flex flex-col justify-between group shadow-xl">\
+          <div class="space-y-4">\
+            <div class="flex justify-between items-start">\
+              <div class="p-3.5 rounded-xl bg-sky-500/10 text-sky-400">\
+                <i class="fa-solid fa-user-tie text-2xl"></i>\
+              </div>\
+              <span class="text-xs font-semibold text-gold-400 font-mono">Jan 2024 - Mei 2024</span>\
+            </div>\
+            <div>\
+              <h3 class="font-serif text-2xl font-bold text-white group-hover:text-sky-400 transition-colors">English Teacher</h3>\
+              <p class="text-sm text-slate-400">Yanbu'ul Qur'an 1 Pati</p>\
+            </div>\
+            <ul class="space-y-2 text-sm text-slate-300 pt-2 border-t border-white/5">\
+              <li class="flex items-start gap-2">\
+                <i class="fa-solid fa-check text-sky-400 mt-1 shrink-0"></i>\
+                <span>Membantu siswa SMP memahami bahasa Inggris lewat pendekatan komunikatif interaktif.</span>\
+              </li>\
+              <li class="flex items-start gap-2">\
+                <i class="fa-solid fa-check text-sky-400 mt-1 shrink-0"></i>\
+                <span>Meningkatkan pemahaman siswa mengenai tata bahasa (grammar) & kosa kata (vocabulary).</span>\
+              </li>\
+              <li class="flex items-start gap-2">\
+                <i class="fa-solid fa-check text-sky-400 mt-1 shrink-0"></i>\
+                <span>Membimbing keterampilan public speaking serta ketangkasan lisan para murid.</span>\
+              </li>\
+            </ul>\
+          </div>\
+        </div>\
+\
+        <!-- Job 3 -->\
+        <div class="p-8 rounded-2xl bg-navy-800 border border-white/5 hover:border-slate-500/30 transition-all flex flex-col justify-between group shadow-xl">\
+          <div class="space-y-4">\
+            <div class="flex justify-between items-start">\
+              <div class="p-3.5 rounded-xl bg-slate-500/10 text-slate-300">\
+                <i class="fa-solid fa-print text-2xl"></i>\
+              </div>\
+              <span class="text-xs font-semibold text-slate-400 font-mono">Mar 2022 - Jul 2022</span>\
+            </div>\
+            <div>\
+              <h3 class="font-serif text-2xl font-bold text-white group-hover:text-slate-300 transition-colors">Design & Print Setter</h3>\
+              <p class="text-sm text-slate-400">CV. Lintas Warna (Internship)</p>\
+            </div>\
+            <ul class="space-y-2 text-sm text-slate-300 pt-2 border-t border-white/5">\
+              <li class="flex items-start gap-2">\
+                <i class="fa-solid fa-check text-slate-500 mt-1 shrink-0"></i>\
+                <span>Menjalankan proses layout/setting desain grafis, print, dan finishing pesanan cetak harian.</span>\
+              </li>\
+              <li class="flex items-start gap-2">\
+                <i class="fa-solid fa-check text-slate-500 mt-1 shrink-0"></i>\
+                <span>Melakukan QC teliti pada format warna, resolusi, & ukuran cetak demi nihil kegagalan.</span>\
+              </li>\
+              <li class="flex items-start gap-2">\
+                <i class="fa-solid fa-check text-slate-500 mt-1 shrink-0"></i>\
+                <span>Mempertahankan standar estetika visual sesuai spesifikasi ketat milik klien.</span>\
+              </li>\
+            </ul>\
+          </div>\
+        </div>\
+\
+      </div>\
+\
+    </div>\
+  </section>\
+\
+  <!-- Organizational Experience Section -->\
+  <section id="organization" class="py-24 bg-[#0A1128]">\
+    <div class="max-w-7xl mx-auto px-6">\
+      \
+      <!-- Section Header -->\
+      <div class="text-center max-w-3xl mx-auto mb-16">\
+        <span class="text-xs font-bold uppercase tracking-widest text-sky-400">Kepemimpinan</span>\
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mt-2 text-white">Organisasi & Kepanitiaan</h2>\
+        <div class="w-16 h-1 bg-gradient-to-r from-sky-400 to-gold-400 mx-auto mt-4 rounded-full"></div>\
+      </div>\
+\
+      <!-- Grid Grid List -->\
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">\
+        \
+        <!-- Org 1 -->\
+        <div class="flex gap-4 p-6 rounded-2xl bg-navy-800 border border-white/5 hover:border-gold-500/20 transition-all">\
+          <div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-400 shrink-0">\
+            <i class="fa-solid fa-users-viewfinder text-xl"></i>\
+          </div>\
+          <div class="space-y-2">\
+            <h3 class="font-serif text-xl font-bold text-white">Mentoring Departemen</h3>\
+            <p class="text-xs text-slate-400 uppercase tracking-wider font-mono">Universitas Ciputra</p>\
+            <p class="text-sm text-slate-300 leading-relaxed">\
+              Membantu mahasiswa baru (Maba UC) beradaptasi dengan atmosfer perkuliahan, menumbuhkan integritas akademik, serta mendukung kesehatan mental awal mereka.\
+            </p>\
+          </div>\
+        </div>\
+\
+        <!-- Org 2 -->\
+        <div class="flex gap-4 p-6 rounded-2xl bg-navy-800 border border-white/5 hover:border-sky-400/20 transition-all">\
+          <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 shrink-0">\
+            <i class="fa-solid fa-calendar-check text-xl"></i>\
+          </div>\
+          <div class="space-y-2">\
+            <h3 class="font-serif text-xl font-bold text-white">Divisi Event | INCREASE Psikologi UC</h3>\
+            <p class="text-xs text-slate-400 uppercase tracking-wider font-mono">Event & Lomba Debat</p>\
+            <p class="text-sm text-slate-300 leading-relaxed">\
+              Menginisiasi alur teknis, perencanaan detail, serta memoderasi perlombaan debat tingkat SMA se-Indonesia untuk mengenalkan perspektif ilmu psikologi.\
+            </p>\
+          </div>\
+        </div>\
+\
+        <!-- Org 3 -->\
+        <div class="flex gap-4 p-6 rounded-2xl bg-navy-800 border border-white/5 hover:border-sky-400/20 transition-all">\
+          <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 shrink-0">\
+            <i class="fa-solid fa-bullhorn text-xl"></i>\
+          </div>\
+          <div class="space-y-2">\
+            <h3 class="font-serif text-xl font-bold text-white">UC Ambassador</h3>\
+            <p class="text-xs text-slate-400 uppercase tracking-wider font-mono">Duta Kampus</p>\
+            <p class="text-sm text-slate-300 leading-relaxed">\
+              Menjadi representasi kampus dalam pameran expo, mendampingi kunjungan siswa SMA, serta membagikan value Ciputra melalui public speaking komunikatif.\
+            </p>\
+          </div>\
+        </div>\
+\
+        <!-- Org 4 -->\
+        <div class="flex gap-4 p-6 rounded-2xl bg-navy-800 border border-white/5 hover:border-gold-500/20 transition-all">\
+          <div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-400 shrink-0">\
+            <i class="fa-solid fa-microphone text-xl"></i>\
+          </div>\
+          <div class="space-y-2">\
+            <h3 class="font-serif text-xl font-bold text-white">Divisi Event | CTC 163 JJA</h3>\
+            <p class="text-xs text-slate-400 uppercase tracking-wider font-mono">Basic English Course (BEC)</p>\
+            <p class="text-sm text-slate-300 leading-relaxed">\
+              Memandu pelaksanaan pertunjukan Speech Mingguan, mengoordinasikan tim teknis dokumentasi, serta mendokumentasikan pertunjukan oratoris.\
+            </p>\
+          </div>\
+        </div>\
+\
+      </div>\
+\
+    </div>\
+  </section>\
+\
+  <!-- Achievements Section -->\
+  <section id="achievements" class="py-24 bg-navy-900 border-t border-white/5 relative">\
+    <div class="absolute inset-0 bg-gradient-to-r from-amber-500/5 to-transparent pointer-events-none"></div>\
+    <div class="max-w-7xl mx-auto px-6 relative z-10">\
+      \
+      <!-- Section Header -->\
+      <div class="text-center max-w-3xl mx-auto mb-16">\
+        <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Prestasi</span>\
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mt-2 text-white">Penghargaan Bergengsi</h2>\
+        <p class="text-slate-400 text-sm mt-2">Daftar juara kompetisi video kreatif & psikologi berskala nasional dan internasional.</p>\
+        <div class="w-16 h-1 bg-gradient-to-r from-gold-500 to-sky-400 mx-auto mt-4 rounded-full"></div>\
+      </div>\
+\
+      <!-- Awards List -->\
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">\
+        \
+        <!-- Award 1 -->\
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-navy-800 to-navy-700 border border-gold-500/30 hover:border-gold-500 shadow-xl transition-all duration-300 hover:-translate-y-1 relative overflow-hidden group">\
+          <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-gold-500/10 rounded-full filter blur-xl group-hover:scale-150 transition-all"></div>\
+          <div class="flex items-start gap-4">\
+            <div class="w-12 h-12 rounded-xl bg-gold-500/20 flex items-center justify-center text-gold-400 text-2xl shrink-0 border border-gold-500/20">\
+              <i class="fa-solid fa-trophy"></i>\
+            </div>\
+            <div>\
+              <span class="text-xs font-semibold text-gold-400 font-mono tracking-wider">TAHUN 2026</span>\
+              <h3 class="font-serif text-xl font-bold text-white mt-1">Juara 1 Lomba Video Edukasi Psikologi</h3>\
+              <p class="text-sm text-sky-400 font-medium">Lembaga Sekolah Psikologi Wilayah Jateng-Kalimantan</p>\
+              <p class="text-xs text-slate-400 mt-2">Kategori: Tingkat Nasional</p>\
+            </div>\
+          </div>\
+        </div>\
+\
+        <!-- Award 2 -->\
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-navy-800 to-navy-700 border border-white/5 hover:border-sky-400 shadow-xl transition-all duration-300 hover:-translate-y-1 relative overflow-hidden group">\
+          <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-sky-500/10 rounded-full filter blur-xl group-hover:scale-150 transition-all"></div>\
+          <div class="flex items-start gap-4">\
+            <div class="w-12 h-12 rounded-xl bg-sky-500/20 flex items-center justify-center text-sky-400 text-2xl shrink-0 border border-sky-500/20">\
+              <i class="fa-solid fa-award"></i>\
+            </div>\
+            <div>\
+              <span class="text-xs font-semibold text-slate-400 font-mono tracking-wider">TAHUN 2025</span>\
+              <h3 class="font-serif text-xl font-bold text-white mt-1">Juara 2 Lomba Reels Edukasi Psikologi</h3>\
+              <p class="text-sm text-sky-400 font-medium">Asia Pacific University (APU)</p>\
+              <p class="text-xs text-slate-400 mt-2">Kategori: Tingkat Internasional</p>\
+            </div>\
+          </div>\
+        </div>\
+\
+        <!-- Award 3 -->\
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-navy-800 to-navy-700 border border-white/5 hover:border-sky-400 shadow-xl transition-all duration-300 hover:-translate-y-1 relative overflow-hidden group">\
+          <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-sky-500/10 rounded-full filter blur-xl group-hover:scale-150 transition-all"></div>\
+          <div class="flex items-start gap-4">\
+            <div class="w-12 h-12 rounded-xl bg-sky-500/20 flex items-center justify-center text-sky-400 text-2xl shrink-0 border border-sky-500/20">\
+              <i class="fa-solid fa-award"></i>\
+            </div>\
+            <div>\
+              <span class="text-xs font-semibold text-slate-400 font-mono tracking-wider">TAHUN 2025</span>\
+              <h3 class="font-serif text-xl font-bold text-white mt-1">Juara 2 Lomba Reels Internasional</h3>\
+              <p class="text-sm text-sky-400 font-medium">Universitas Mercu Buana Yogyakarta</p>\
+              <p class="text-xs text-slate-400 mt-2">Kategori: Tingkat Internasional</p>\
+            </div>\
+          </div>\
+        </div>\
+\
+        <!-- Award 4 -->\
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-navy-800 to-navy-700 border border-gold-500/30 hover:border-gold-500 shadow-xl transition-all duration-300 hover:-translate-y-1 relative overflow-hidden group">\
+          <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-gold-500/10 rounded-full filter blur-xl group-hover:scale-150 transition-all"></div>\
+          <div class="flex items-start gap-4">\
+            <div class="w-12 h-12 rounded-xl bg-gold-500/20 flex items-center justify-center text-gold-400 text-2xl shrink-0 border border-gold-500/20">\
+              <i class="fa-solid fa-trophy"></i>\
+            </div>\
+            <div>\
+              <span class="text-xs font-semibold text-gold-400 font-mono tracking-wider">TAHUN 2025</span>\
+              <h3 class="font-serif text-xl font-bold text-white mt-1">Juara 1 Lomba Reels Kreatif</h3>\
+              <p class="text-sm text-sky-400 font-medium">Universitas Terbuka Surabaya</p>\
+              <p class="text-xs text-slate-400 mt-2">Kategori: Tingkat Regional / Provinsi</p>\
+            </div>\
+          </div>\
+        </div>\
+\
+      </div>\
+\
+    </div>\
+  </section>\
+\
+  <!-- Skills Section -->\
+  <section id="skills" class="py-24 bg-[#0A1128]">\
+    <div class="max-w-7xl mx-auto px-6">\
+      \
+      <!-- Section Header -->\
+      <div class="text-center max-w-3xl mx-auto mb-16">\
+        <span class="text-xs font-bold uppercase tracking-widest text-sky-400">Peta Kemampuan</span>\
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mt-2 text-white">Keahlian & Bahasa</h2>\
+        <div class="w-16 h-1 bg-gradient-to-r from-sky-400 to-gold-400 mx-auto mt-4 rounded-full"></div>\
+      </div>\
+\
+      <!-- Skills Grid (Categorized) -->\
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">\
+        \
+        <!-- Category 1: Psychology -->\
+        <div class="p-6 rounded-2xl bg-navy-800 border border-white/5 space-y-4">\
+          <div class="flex items-center gap-3 border-b border-white/5 pb-3">\
+            <i class="fa-solid fa-brain text-gold-400 text-xl"></i>\
+            <h3 class="font-bold text-white">Psychology</h3>\
+          </div>\
+          <div class="space-y-3">\
+            <div>\
+              <div class="flex justify-between text-xs mb-1">\
+                <span class="text-slate-300">Dasar Asesmen Psikologis</span>\
+                <span class="text-gold-400 font-mono">90%</span>\
+              </div>\
+              <div class="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">\
+                <div class="h-full bg-gold-400 rounded-full" style="width: 90%"></div>\
+              </div>\
+            </div>\
+            <div>\
+              <div class="flex justify-between text-xs mb-1">\
+                <span class="text-slate-300">Observasi Perilaku</span>\
+                <span class="text-gold-400 font-mono">85%</span>\
+              </div>\
+              <div class="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">\
+                <div class="h-full bg-gold-400 rounded-full" style="width: 85%"></div>\
+              </div>\
+            </div>\
+            <div>\
+              <div class="flex justify-between text-xs mb-1">\
+                <span class="text-slate-300">Psikologi Pendidikan</span>\
+                <span class="text-gold-400 font-mono">88%</span>\
+              </div>\
+              <div class="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">\
+                <div class="h-full bg-gold-400 rounded-full" style="width: 88%"></div>\
+              </div>\
+            </div>\
+          </div>\
+        </div>\
+\
+        <!-- Category 2: Creative -->\
+        <div class="p-6 rounded-2xl bg-navy-800 border border-white/5 space-y-4">\
+          <div class="flex items-center gap-3 border-b border-white/5 pb-3">\
+            <i class="fa-solid fa-wand-magic-sparkles text-sky-400 text-xl"></i>\
+            <h3 class="font-bold text-white">Creative</h3>\
+          </div>\
+          <div class="space-y-3">\
+            <div>\
+              <div class="flex justify-between text-xs mb-1">\
+                <span class="text-slate-300">Content Creation</span>\
+                <span class="text-sky-400 font-mono">95%</span>\
+              </div>\
+              <div class="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">\
+                <div class="h-full bg-sky-400 rounded-full" style="width: 95%"></div>\
+              </div>\
+            </div>\
+            <div>\
+              <div class="flex justify-between text-xs mb-1">\
+                <span class="text-slate-300">Video Editing (CapCut/etc)</span>\
+                <span class="text-sky-400 font-mono">92%</span>\
+              </div>\
+              <div class="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">\
+                <div class="h-full bg-sky-400 rounded-full" style="width: 92%"></div>\
+              </div>\
+            </div>\
+            <div>\
+              <div class="flex justify-between text-xs mb-1">\
+                <span class="text-slate-300">Educational Storytelling</span>\
+                <span class="text-sky-400 font-mono">94%</span>\
+              </div>\
+              <div class="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">\
+                <div class="h-full bg-sky-400 rounded-full" style="width: 94%"></div>\
+              </div>\
+            </div>\
+          </div>\
+        </div>\
+\
+        <!-- Category 3: Technical -->\
+        <div class="p-6 rounded-2xl bg-navy-800 border border-white/5 space-y-4">\
+          <div class="flex items-center gap-3 border-b border-white/5 pb-3">\
+            <i class="fa-solid fa-laptop-code text-slate-300 text-xl"></i>\
+            <h3 class="font-bold text-white">Technical</h3>\
+          </div>\
+          <div class="space-y-3">\
+            <div>\
+              <div class="flex justify-between text-xs mb-1">\
+                <span class="text-slate-300">Graphic Design (Photoshop)</span>\
+                <span class="text-slate-300 font-mono">80%</span>\
+              </div>\
+              <div class="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">\
+                <div class="h-full bg-slate-400 rounded-full" style="width: 80%"></div>\
+              </div>\
+            </div>\
+            <div>\
+              <div class="flex justify-between text-xs mb-1">\
+                <span class="text-slate-300">Canva Specialist</span>\
+                <span class="text-slate-300 font-mono">90%</span>\
+              </div>\
+              <div class="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">\
+                <div class="h-full bg-slate-400 rounded-full" style="width: 90%"></div>\
+              </div>\
+            </div>\
+            <div>\
+              <div class="flex justify-between text-xs mb-1">\
+                <span class="text-slate-300">Print Finishing & QC</span>\
+                <span class="text-slate-300 font-mono">85%</span>\
+              </div>\
+              <div class="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">\
+                <div class="h-full bg-slate-400 rounded-full" style="width: 85%"></div>\
+              </div>\
+            </div>\
+          </div>\
+        </div>\
+\
+        <!-- Category 4: Communication -->\
+        <div class="p-6 rounded-2xl bg-navy-800 border border-white/5 space-y-4">\
+          <div class="flex items-center gap-3 border-b border-white/5 pb-3">\
+            <i class="fa-solid fa-comments text-emerald-400 text-xl"></i>\
+            <h3 class="font-bold text-white">Communication</h3>\
+          </div>\
+          <div class="space-y-3">\
+            <div>\
+              <div class="flex justify-between text-xs mb-1">\
+                <span class="text-slate-300">Public Speaking</span>\
+                <span class="text-emerald-400 font-mono">88%</span>\
+              </div>\
+              <div class="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">\
+                <div class="h-full bg-emerald-400 rounded-full" style="width: 88%"></div>\
+              </div>\
+            </div>\
+            <div>\
+              <div class="flex justify-between text-xs mb-1">\
+                <span class="text-slate-300">Teaching & Mentoring</span>\
+                <span class="text-emerald-400 font-mono">92%</span>\
+              </div>\
+              <div class="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">\
+                <div class="h-full bg-emerald-400 rounded-full" style="width: 92%"></div>\
+              </div>\
+            </div>\
+            <div>\
+              <div class="flex justify-between text-xs mb-1">\
+                <span class="text-slate-300">Bahasa Inggris (Upper Inter.)</span>\
+                <span class="text-emerald-400 font-mono">85%</span>\
+              </div>\
+              <div class="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">\
+                <div class="h-full bg-emerald-400 rounded-full" style="width: 85%"></div>\
+              </div>\
+            </div>\
+          </div>\
+        </div>\
+\
+      </div>\
+\
+    </div>\
+  </section>\
+\
+  <!-- Certifications Section -->\
+  <section id="certifications" class="py-24 bg-navy-900 border-t border-white/5">\
+    <div class="max-w-7xl mx-auto px-6">\
+      \
+      <!-- Section Header -->\
+      <div class="text-center max-w-3xl mx-auto mb-16">\
+        <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Lisensi Resmi</span>\
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mt-2 text-white">Sertifikasi & Lisensi</h2>\
+        <div class="w-16 h-1 bg-gradient-to-r from-gold-500 to-sky-400 mx-auto mt-4 rounded-full"></div>\
+      </div>\
+\
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">\
+        \
+        <!-- Cert 1 -->\
+        <div class="p-6 rounded-2xl bg-navy-800 border border-white/5 hover:border-gold-500/20 transition-all flex gap-4 shadow-lg">\
+          <div class="w-14 h-14 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-400 text-2xl shrink-0">\
+            <i class="fa-solid fa-certificate"></i>\
+          </div>\
+          <div>\
+            <span class="text-[10px] font-mono font-bold tracking-widest text-gold-400">INTENSIVE PROGRAM</span>\
+            <h3 class="font-serif text-lg font-bold text-white mt-1">Certificate of Completion</h3>\
+            <p class="text-xs text-sky-400 font-semibold">Issued by: Basic English Course (BEC)</p>\
+            <p class="text-sm text-slate-400 mt-2">Menyatakan kelulusan tingkat intensif lisan dan tulisan profesional Bahasa Inggris.</p>\
+          </div>\
+        </div>\
+\
+        <!-- Cert 2 -->\
+        <div class="p-6 rounded-2xl bg-navy-800 border border-white/5 hover:border-sky-400/20 transition-all flex gap-4 shadow-lg">\
+          <div class="w-14 h-14 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 text-2xl shrink-0">\
+            <i class="fa-solid fa-stamp"></i>\
+          </div>\
+          <div>\
+            <span class="text-[10px] font-mono font-bold tracking-widest text-sky-400">STANDAR NASIONAL</span>\
+            <h3 class="font-serif text-lg font-bold text-white mt-1">Video Iklan & Poster Digital</h3>\
+            <p class="text-xs text-gold-400 font-semibold">Issued by: Badan Standar Nasional Pendidikan (BSNP)</p>\
+            <p class="text-sm text-slate-400 mt-2">Sertifikat kompetensi keahlian resmi multimedia di bidang produksi periklanan kreatif.</p>\
+          </div>\
+        </div>\
+\
+      </div>\
+\
+    </div>\
+  </section>\
+\
+  <!-- Portfolio Section -->\
+  <section id="portfolio" class="py-24 bg-[#0A1128] border-t border-white/5">\
+    <div class="max-w-7xl mx-auto px-6">\
+      \
+      <!-- Section Header -->\
+      <div class="text-center max-w-3xl mx-auto mb-12">\
+        <span class="text-xs font-bold uppercase tracking-widest text-sky-400">Karya Saya</span>\
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mt-2 text-white">Project Pilihan</h2>\
+        <div class="w-16 h-1 bg-gradient-to-r from-sky-400 to-gold-400 mx-auto mt-4 rounded-full"></div>\
+      </div>\
+\
+      <!-- Filter Controls -->\
+      <div class="flex flex-wrap justify-center gap-3 mb-12">\
+        <button onclick="filterPortfolio('all')" class="portfolio-filter-btn px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-gold-500 text-navy-900 transition-all">Semua</button>\
+        <button onclick="filterPortfolio('video')" class="portfolio-filter-btn px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-navy-800 text-slate-300 border border-white/5 hover:bg-white/5 transition-all">Video Edukasi</button>\
+        <button onclick="filterPortfolio('reels')" class="portfolio-filter-btn px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-navy-800 text-slate-300 border border-white/5 hover:bg-white/5 transition-all">Instagram Reels</button>\
+        <button onclick="filterPortfolio('design')" class="portfolio-filter-btn px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-navy-800 text-slate-300 border border-white/5 hover:bg-white/5 transition-all">Desain & Media</button>\
+      </div>\
+\
+      <!-- Portfolio Grid -->\
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">\
+        \
+        <!-- Project 1 (Video) -->\
+        <div class="portfolio-item video p-4 rounded-2xl bg-navy-800 border border-white/5 hover:border-gold-500/20 transition-all flex flex-col justify-between group">\
+          <div class="space-y-4">\
+            <div class="h-48 rounded-xl bg-gradient-to-br from-indigo-950 to-indigo-800 overflow-hidden relative flex items-center justify-center border border-white/5">\
+              \
+              <!-- \uc0\u55357 \u56568  FOTO KARYA 1 -->\
+              <!-- Ganti 'video-edukasi.jpg' dengan file gambar thumbnail Anda -->\
+              <img src="video-edukasi.jpg" alt="Video Edukasi" \
+                   class="absolute inset-0 w-full h-full object-cover z-10"\
+                   onerror="this.style.display='none'">\
+\
+              <!-- SVG Mock Image (Cadangan otomatis jika foto-portfolio kosong) -->\
+              <svg class="w-20 h-20 text-gold-400" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">\
+                <rect x="15" y="20" width="70" height="60" rx="8" stroke="currentColor" stroke-width="4" />\
+                <polygon points="45,40 45,60 63,50" fill="currentColor" />\
+              </svg>\
+              <span class="absolute top-3 left-3 px-2 py-1 rounded bg-gold-500/20 border border-gold-500/30 text-[10px] font-bold text-gold-400 tracking-wider font-mono uppercase z-20">VIDEO EDUKASI</span>\
+            </div>\
+            <div>\
+              <h3 class="font-serif text-lg font-bold text-white group-hover:text-gold-400 transition-colors">Juara 1 Video Edukasi Psikologi Nasional</h3>\
+              <p class="text-xs text-slate-400 mt-1">Mengulas pengantar psikologi perilaku sosial secara mendalam untuk remaja Indonesia.</p>\
+            </div>\
+          </div>\
+          <div class="flex items-center justify-between pt-4 border-t border-white/5 mt-4">\
+            <span class="text-[10px] font-mono text-slate-400">2026</span>\
+            <button onclick="viewProject('Juara 1 Video Edukasi Psikologi Nasional', 'Proyek video berdurasi penuh yang memenangkan medali emas dalam kompetisi nasional Jawa Tengah - Kalimantan. Menyederhanakan teori kepribadian ke format interaktif.')" class="text-xs font-bold text-sky-400 hover:text-gold-400 transition-colors">Lihat Detail <i class="fa-solid fa-arrow-right ml-1"></i></button>\
+          </div>\
+        </div>\
+\
+        <!-- Project 2 (Reels) -->\
+        <div class="portfolio-item reels p-4 rounded-2xl bg-navy-800 border border-white/5 hover:border-sky-400/20 transition-all flex flex-col justify-between group">\
+          <div class="space-y-4">\
+            <div class="h-48 rounded-xl bg-gradient-to-br from-emerald-950 to-emerald-900 overflow-hidden relative flex items-center justify-center border border-white/5">\
+              \
+              <!-- \uc0\u55357 \u56568  FOTO KARYA 2 -->\
+              <!-- Ganti 'apu-reels.jpg' dengan file gambar thumbnail Anda -->\
+              <img src="apu-reels.jpg" alt="APU Reels" \
+                   class="absolute inset-0 w-full h-full object-cover z-10"\
+                   onerror="this.style.display='none'">\
+\
+              <svg class="w-16 h-16 text-sky-400" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">\
+                <rect x="25" y="15" width="50" height="70" rx="8" stroke="currentColor" stroke-width="4" />\
+                <circle cx="50" cy="50" r="12" stroke="currentColor" stroke-width="3" />\
+                <circle cx="50" cy="28" r="3" fill="currentColor" />\
+              </svg>\
+              <span class="absolute top-3 left-3 px-2 py-1 rounded bg-sky-500/20 border border-sky-500/30 text-[10px] font-bold text-sky-400 tracking-wider font-mono uppercase z-20">INSTAGRAM REELS</span>\
+            </div>\
+            <div>\
+              <h3 class="font-serif text-lg font-bold text-white group-hover:text-sky-400 transition-colors">Juara 2 APU Reels Internasional</h3>\
+              <p class="text-xs text-slate-400 mt-1">Video pendek kreatif yang membahas bias kognitif dalam pengambilan keputusan sehari-hari.</p>\
+            </div>\
+          </div>\
+          <div class="flex items-center justify-between pt-4 border-t border-white/5 mt-4">\
+            <span class="text-[10px] font-mono text-slate-400">2025</span>\
+            <button onclick="viewProject('Juara 2 APU Reels Internasional', 'Video pendek berdurasi 90 detik yang diunggah di Instagram UC Psychology, mendapat rekognisi global dari Asia Pacific University.')" class="text-xs font-bold text-sky-400 hover:text-gold-400 transition-colors">Lihat Detail <i class="fa-solid fa-arrow-right ml-1"></i></button>\
+          </div>\
+        </div>\
+\
+        <!-- Project 3 (Design) -->\
+        <div class="portfolio-item design p-4 rounded-2xl bg-navy-800 border border-white/5 hover:border-slate-500/20 transition-all flex flex-col justify-between group">\
+          <div class="space-y-4">\
+            <div class="h-48 rounded-xl bg-gradient-to-br from-violet-950 to-violet-900 overflow-hidden relative flex items-center justify-center border border-white/5">\
+              \
+              <!-- \uc0\u55357 \u56568  FOTO KARYA 3 -->\
+              <!-- Ganti 'print-design.jpg' dengan file gambar thumbnail Anda -->\
+              <img src="print-design.jpg" alt="Print Design" \
+                   class="absolute inset-0 w-full h-full object-cover z-10"\
+                   onerror="this.style.display='none'">\
+\
+              <svg class="w-20 h-20 text-slate-400" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">\
+                <path d="M30,30 L70,30 L70,70 L30,70 Z" stroke="currentColor" stroke-width="4" />\
+                <circle cx="50" cy="50" r="15" fill="currentColor" opacity="0.5" />\
+                <polygon points="30,70 50,50 60,60 70,40 70,70" fill="currentColor" />\
+              </svg>\
+              <span class="absolute top-3 left-3 px-2 py-1 rounded bg-violet-500/20 border border-violet-500/30 text-[10px] font-bold text-violet-400 tracking-wider font-mono uppercase z-20">DESAIN & FINISHING</span>\
+            </div>\
+            <div>\
+              <h3 class="font-serif text-lg font-bold text-white group-hover:text-slate-300 transition-colors">CV Lintas Warna Print Design</h3>\
+              <p class="text-xs text-slate-400 mt-1">Layouting presisi, kalibrasi warna CMYK, dan pengerjaan finishing cetak korporasi.</p>\
+            </div>\
+          </div>\
+          <div class="flex items-center justify-between pt-4 border-t border-white/5 mt-4">\
+            <span class="text-[10px] font-mono text-slate-400">2022</span>\
+            <button onclick="viewProject('CV Lintas Warna Print Design', 'Portofolio lengkap desain kemasan, katalog, dan materi cetak yang diproduksi saat magang di CV Lintas Warna.')" class="text-xs font-bold text-sky-400 hover:text-gold-400 transition-colors">Lihat Detail <i class="fa-solid fa-arrow-right ml-1"></i></button>\
+          </div>\
+        </div>\
+\
+        <!-- Project 4 (Reels) -->\
+        <div class="portfolio-item reels p-4 rounded-2xl bg-navy-800 border border-white/5 hover:border-sky-400/20 transition-all flex flex-col justify-between group">\
+          <div class="space-y-4">\
+            <div class="h-48 rounded-xl bg-gradient-to-br from-slate-950 to-slate-900 overflow-hidden relative flex items-center justify-center border border-white/5">\
+              \
+              <!-- \uc0\u55357 \u56568  FOTO KARYA 4 -->\
+              <!-- Ganti 'ut-surabaya-reels.jpg' dengan file gambar thumbnail Anda -->\
+              <img src="ut-surabaya-reels.jpg" alt="UT Surabaya Reels" \
+                   class="absolute inset-0 w-full h-full object-cover z-10"\
+                   onerror="this.style.display='none'">\
+\
+              <svg class="w-16 h-16 text-sky-400" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">\
+                <rect x="25" y="15" width="50" height="70" rx="8" stroke="currentColor" stroke-width="4" />\
+                <polygon points="45,42 45,58 59,50" fill="currentColor" />\
+              </svg>\
+              <span class="absolute top-3 left-3 px-2 py-1 rounded bg-sky-500/20 border border-sky-500/30 text-[10px] font-bold text-sky-400 tracking-wider font-mono uppercase z-20">INSTAGRAM REELS</span>\
+            </div>\
+            <div>\
+              <h3 class="font-serif text-lg font-bold text-white group-hover:text-sky-400 transition-colors">Universitas Terbuka Surabaya Reels</h3>\
+              <p class="text-xs text-slate-400 mt-1">Juara 1 Reels Kreatif yang menceritakan gaya belajar fleksibel di masa digital.</p>\
+            </div>\
+          </div>\
+          <div class="flex items-center justify-between pt-4 border-t border-white/5 mt-4">\
+            <span class="text-[10px] font-mono text-slate-400">2025</span>\
+            <button onclick="viewProject('Universitas Terbuka Surabaya Reels', 'Kampanye video pendek pemenang penghargaan utama, menggambarkan perjalanan inspiratif mahasiswa menyeimbangkan hobi & kuliah.')" class="text-xs font-bold text-sky-400 hover:text-gold-400 transition-colors">Lihat Detail <i class="fa-solid fa-arrow-right ml-1"></i></button>\
+          </div>\
+        </div>\
+\
+      </div>\
+\
+    </div>\
+  </section>\
+\
+  <!-- Contact Section -->\
+  <section id="contact" class="py-24 bg-navy-900 border-t border-white/5 relative">\
+    <div class="max-w-7xl mx-auto px-6 relative z-10">\
+      \
+      <!-- Section Header -->\
+      <div class="text-center max-w-3xl mx-auto mb-16">\
+        <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Hubungi</span>\
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mt-2 text-white">Mulai Kolaborasi</h2>\
+        <div class="w-16 h-1 bg-gradient-to-r from-gold-500 to-sky-400 mx-auto mt-4 rounded-full"></div>\
+      </div>\
+\
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start max-w-5xl mx-auto">\
+        <!-- Contact Information (Left) -->\
+        <div class="lg:col-span-5 space-y-6">\
+          <div class="p-6 rounded-2xl bg-navy-800 border border-white/5 space-y-4">\
+            <h3 class="font-serif text-2xl font-bold text-white">Mari Berdiskusi</h3>\
+            <p class="text-slate-300 text-sm leading-relaxed">\
+              Saya sangat terbuka untuk penawaran magang (internship), kemitraan konten edukatif, mengajar bahasa Inggris, atau kolaborasi visual multimedia lainnya.\
+            </p>\
+            \
+            <div class="space-y-4 pt-4 border-t border-white/5">\
+              <div class="flex items-center gap-4">\
+                <div class="w-10 h-10 rounded-full bg-gold-500/10 flex items-center justify-center text-gold-400 shrink-0">\
+                  <i class="fa-solid fa-envelope"></i>\
+                </div>\
+                <div>\
+                  <span class="text-xs text-slate-400 block">KIRIM EMAIL</span>\
+                  <a href="mailto:mikorinam11@gmail.com" class="text-sm font-semibold text-white hover:text-gold-400 transition-colors">mikorinam11@gmail.com</a>\
+                </div>\
+              </div>\
+\
+              <div class="flex items-center gap-4">\
+                <div class="w-10 h-10 rounded-full bg-sky-500/10 flex items-center justify-center text-sky-400 shrink-0">\
+                  <i class="fa-solid fa-phone"></i>\
+                </div>\
+                <div>\
+                  <span class="text-xs text-slate-400 block">TELEPON / WA</span>\
+                  <a href="tel:08152304047" class="text-sm font-semibold text-white hover:text-sky-400 transition-colors">08152304047</a>\
+                </div>\
+              </div>\
+\
+              <div class="flex items-center gap-4">\
+                <div class="w-10 h-10 rounded-full bg-slate-500/10 flex items-center justify-center text-slate-300 shrink-0">\
+                  <i class="fa-solid fa-map-pin"></i>\
+                </div>\
+                <div>\
+                  <span class="text-xs text-slate-400 block">LOKASI</span>\
+                  <span class="text-sm font-semibold text-white">Surabaya, Jawa Timur, Indonesia</span>\
+                </div>\
+              </div>\
+\
+              <div class="flex items-center gap-4">\
+                <div class="w-10 h-10 rounded-full bg-pink-500/10 flex items-center justify-center text-pink-400 shrink-0">\
+                  <i class="fa-brands fa-instagram"></i>\
+                </div>\
+                <div>\
+                  <span class="text-xs text-slate-400 block">INSTAGRAM</span>\
+                  <a href="https://instagram.com/mikornm" target="_blank" class="text-sm font-semibold text-white hover:text-pink-400 transition-colors">@mikornm</a>\
+                </div>\
+              </div>\
+            </div>\
+          </div>\
+        </div>\
+\
+        <!-- Contact Form (Right) -->\
+        <div class="lg:col-span-7">\
+          <form id="contact-form" onsubmit="handleFormSubmit(event)" class="p-8 rounded-2xl bg-navy-800 border border-white/5 space-y-6 shadow-xl">\
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">\
+              <div class="space-y-2">\
+                <label for="name" class="text-xs font-bold uppercase tracking-wider text-slate-400">Nama Lengkap</label>\
+                <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg bg-navy-900 border border-white/10 text-white focus:outline-none focus:border-gold-500 transition-colors">\
+              </div>\
+              <div class="space-y-2">\
+                <label for="email" class="text-xs font-bold uppercase tracking-wider text-slate-400">Alamat Email</label>\
+                <input type="email" id="email" required class="w-full px-4 py-3 rounded-lg bg-navy-900 border border-white/10 text-white focus:outline-none focus:border-gold-500 transition-colors">\
+              </div>\
+            </div>\
+            <div class="space-y-2">\
+              <label for="message" class="text-xs font-bold uppercase tracking-wider text-slate-400">Pesan / Penawaran</label>\
+              <textarea id="message" rows="5" required class="w-full px-4 py-3 rounded-lg bg-navy-900 border border-white/10 text-white focus:outline-none focus:border-gold-500 transition-colors"></textarea>\
+            </div>\
+            <button type="submit" class="w-full py-4 rounded-lg font-bold text-sm uppercase tracking-wider bg-gradient-to-r from-gold-500 to-amber-500 text-navy-900 hover:from-sky-400 hover:to-sky-500 shadow-lg shadow-gold-500/10 hover:shadow-sky-400/20 transition-all duration-300">\
+              Kirim Pesan <i class="fa-solid fa-paper-plane ml-2"></i>\
+            </button>\
+            <p id="form-status" class="hidden text-center text-xs text-emerald-400 font-semibold"></p>\
+          </form>\
+        </div>\
+      </div>\
+\
+    </div>\
+  </section>\
+\
+  <!-- Footer -->\
+  <footer class="bg-[#050B1B] border-t border-white/5 py-12 text-center text-sm text-slate-500 relative">\
+    <div class="max-w-7xl mx-auto px-6 space-y-6">\
+      <div class="flex justify-center gap-6">\
+        <a href="https://instagram.com/mikornm" target="_blank" class="p-2.5 rounded-full border border-white/5 bg-white/5 text-slate-400 hover:text-gold-400 transition-all hover:scale-110">\
+          <i class="fa-brands fa-instagram text-lg"></i>\
+        </a>\
+        <a href="mailto:mikorinam11@gmail.com" class="p-2.5 rounded-full border border-white/5 bg-white/5 text-slate-400 hover:text-sky-400 transition-all hover:scale-110">\
+          <i class="fa-solid fa-envelope text-lg"></i>\
+        </a>\
+        <a href="tel:08152304047" class="p-2.5 rounded-full border border-white/5 bg-white/5 text-slate-400 hover:text-emerald-400 transition-all hover:scale-110">\
+          <i class="fa-solid fa-phone text-lg"></i>\
+        </a>\
+      </div>\
+      <p class="text-xs md:text-sm font-light">\
+        &copy; 2026. Designed with passion by <span class="text-gold-400 font-semibold">Michorinam Harilaha Limsib</span>. All rights reserved.\
+      </p>\
+      \
+      <!-- Back to Top Button -->\
+      <a href="#hero" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-sky-400 hover:text-gold-400 transition-colors">\
+        Kembali Ke Atas <i class="fa-solid fa-arrow-up-long animate-bounce"></i>\
+      </a>\
+    </div>\
+  </footer>\
+\
+  <!-- Project Preview Detail Modal -->\
+  <div id="project-modal" class="hidden fixed inset-0 z-50 bg-navy-900/95 backdrop-blur-md flex items-center justify-center p-6 transition-all duration-300">\
+    <div class="p-8 rounded-2xl bg-navy-800 border border-white/10 max-w-lg w-full relative space-y-4">\
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-gold-400 text-2xl">\
+        <i class="fa-solid fa-xmark"></i>\
+      </button>\
+      <div class="inline-block px-3 py-1 rounded bg-sky-500/15 text-sky-400 text-xs font-bold tracking-wider font-mono">DETAIL PROYEK</div>\
+      <h3 class="font-serif text-2xl font-bold text-white" id="modal-title">Judul Proyek</h3>\
+      <p class="text-sm text-slate-300 leading-relaxed" id="modal-desc">Deskripsi proyek yang sangat menarik di sini.</p>\
+      <div class="pt-4 flex justify-end">\
+        <button onclick="closeModal()" class="px-6 py-2 rounded-lg text-xs font-bold bg-white/5 hover:bg-white/10 border border-white/10 text-white uppercase tracking-wider transition-all">Tutup</button>\
+      </div>\
+    </div>\
+  </div>\
+\
+  <script>\
+    // Hide Loader\
+    window.addEventListener('load', () => \{\
+      const loader = document.getElementById('loader');\
+      loader.classList.add('opacity-0');\
+      setTimeout(() => loader.remove(), 700);\
+    \});\
+\
+    // Handle Active Navigation Header Background\
+    window.addEventListener('scroll', () => \{\
+      const nav = document.getElementById('navbar');\
+      if (window.scrollY > 50) \{\
+        nav.classList.add('bg-navy-900/95', 'py-3', 'shadow-xl');\
+        nav.classList.remove('py-4');\
+      \} else \{\
+        nav.classList.remove('bg-navy-900/95', 'py-3', 'shadow-xl');\
+        nav.classList.add('py-4');\
+      \}\
+\
+      // Scroll Progress Indicator calculation\
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;\
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;\
+      const scrolled = (winScroll / height) * 100;\
+      document.getElementById("scroll-indicator").style.width = scrolled + "%";\
+    \});\
+\
+    // Mobile Menu Toggle\
+    const menuToggle = document.getElementById('menu-toggle');\
+    const mobileMenu = document.getElementById('mobile-menu');\
+    menuToggle.addEventListener('click', () => \{\
+      mobileMenu.classList.toggle('hidden');\
+    \});\
+\
+    // Dark/Light Mode Theme Toggle\
+    const themeToggle = document.getElementById('theme-toggle');\
+    const themeIcon = document.getElementById('theme-icon');\
+    const bodyTheme = document.getElementById('body-theme');\
+\
+    themeToggle.addEventListener('click', () => \{\
+      if (bodyTheme.classList.contains('light')) \{\
+        bodyTheme.classList.remove('light');\
+        bodyTheme.classList.add('dark');\
+        themeIcon.classList.remove('fa-sun');\
+        themeIcon.classList.add('fa-moon');\
+      \} else \{\
+        bodyTheme.classList.remove('dark');\
+        bodyTheme.classList.add('light');\
+        themeIcon.classList.remove('fa-moon');\
+        themeIcon.classList.add('fa-sun');\
+      \}\
+    \});\
+\
+    // Dynamic Headline Typing Effect\
+    const headlines = [\
+      "Psychology Student",\
+      "Content Creator",\
+      "English Teacher",\
+      "Educational Storyteller"\
+    ];\
+    let headlineIndex = 0;\
+    let charIndex = 0;\
+    let currentText = '';\
+    let isDeleting = false;\
+    const typingSpeed = 100;\
+    const deletingSpeed = 50;\
+    const delayBetween = 1500;\
+    const el = document.getElementById('dynamic-headline');\
+\
+    function type() \{\
+      const fullText = headlines[headlineIndex];\
+      \
+      if (isDeleting) \{\
+        currentText = fullText.substring(0, charIndex - 1);\
+        charIndex--;\
+      \} else \{\
+        currentText = fullText.substring(0, charIndex + 1);\
+        charIndex++;\
+      \}\
+\
+      el.textContent = currentText;\
+\
+      let speed = isDeleting ? deletingSpeed : typingSpeed;\
+\
+      if (!isDeleting && currentText === fullText) \{\
+        speed = delayBetween;\
+        isDeleting = true;\
+      \} else if (isDeleting && currentText === '') \{\
+        isDeleting = false;\
+        headlineIndex = (headlineIndex + 1) % headlines.length;\
+        speed = 500;\
+      \}\
+\
+      setTimeout(type, speed);\
+    \}\
+    // Start typing\
+    setTimeout(type, 1000);\
+\
+    // Image Error / Fallback Handler\
+    function handleImageError(image, fallbackId) \{\
+      // Sembunyikan element gambar yang error\
+      image.style.opacity = '0';\
+      image.style.pointerEvents = 'none';\
+      // Tampilkan fallback element\
+      const fallback = document.getElementById(fallbackId);\
+      if (fallback) \{\
+        fallback.classList.remove('hidden');\
+      \}\
+    \}\
+\
+    // Mock Download CV\
+    function downloadCV() \{\
+      const modal = document.getElementById('project-modal');\
+      const title = document.getElementById('modal-title');\
+      const desc = document.getElementById('modal-desc');\
+      \
+      title.innerText = "Download Curriculum Vitae";\
+      desc.innerHTML = `CV lengkap Michorinam Harilaha Limsib berformat PDF berhasil dipersiapkan untuk Anda.<br><br><strong>Detail Kontak Anda telah dicatat untuk pengiriman.</strong>`;\
+      modal.classList.remove('hidden');\
+    \}\
+\
+    // Modal Handling for Project Previews\
+    function viewProject(title, description) \{\
+      const modal = document.getElementById('project-modal');\
+      const modalTitle = document.getElementById('modal-title');\
+      const modalDesc = document.getElementById('modal-desc');\
+      \
+      modalTitle.innerText = title;\
+      modalDesc.innerText = description;\
+      modal.classList.remove('hidden');\
+    \}\
+\
+    function closeModal() \{\
+      document.getElementById('project-modal').classList.add('hidden');\
+    \}\
+\
+    // Portfolio Category Filtering\
+    function filterPortfolio(category) \{\
+      const items = document.querySelectorAll('.portfolio-item');\
+      const buttons = document.querySelectorAll('.portfolio-filter-btn');\
+      \
+      // Update Active Button Style\
+      buttons.forEach(btn => \{\
+        btn.classList.remove('bg-gold-500', 'text-navy-900');\
+        btn.classList.add('bg-navy-800', 'text-slate-300', 'border', 'border-white/5');\
+      \});\
+\
+      // Target correct button\
+      event.target.classList.add('bg-gold-500', 'text-navy-900');\
+      event.target.classList.remove('bg-navy-800', 'text-slate-300', 'border', 'border-white/5');\
+\
+      items.forEach(item => \{\
+        if (category === 'all') \{\
+          item.classList.remove('hidden');\
+        \} else \{\
+          if (item.classList.contains(category)) \{\
+            item.classList.remove('hidden');\
+          \} else \{\
+            item.classList.add('hidden');\
+          \}\
+        \}\
+      \});\
+    \}\
+\
+    // Contact Form Action Mock Implementation\
+    function handleFormSubmit(event) \{\
+      event.preventDefault();\
+      const name = document.getElementById('name').value;\
+      const statusText = document.getElementById('form-status');\
+      \
+      statusText.innerText = `Terima kasih, $\{name\}! Pesan Anda berhasil dikirim ke Michorinam.`;\
+      statusText.classList.remove('hidden');\
+      \
+      // Clear inputs\
+      document.getElementById('contact-form').reset();\
+    \}\
+  </script>\
+</body>\
+</html>}
